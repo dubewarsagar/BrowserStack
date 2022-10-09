@@ -26,6 +26,6 @@ public class BStackDemoTest extends BrowserStackRemoteTest {
         String productOnCartText = driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div/div[2]/div[2]/div[2]/div/div[3]/p[1]")).getText();
         Assert.assertEquals(productOnScreenText, productOnCartText);
 
-        System.out.println("DONE");
+        System.out.println("Aaj hoil ka");
     }
 }
