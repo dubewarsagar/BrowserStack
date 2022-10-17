@@ -29,11 +29,11 @@ jobs:
 #      - name: 'Run test case'
 #        run: npm install
 
-      - name: 'Running application under test'
-        run: ../../src/test/java/com/browserstack/BStackDemoTest.java
+#      - name: 'Running application under test'
+#        run: src/test/java/com/browserstack/BrowserStackRemoteTest.java
 
-#      - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
-#        run: node index.js  # See sample test script above
+      - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
+        run: src/test/java/com/browserstack/BrowserStackRemoteTest.java  # See sample test script above
 
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
         uses: browserstack/github-actions/setup-local@master
