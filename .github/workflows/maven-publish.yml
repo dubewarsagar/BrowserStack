@@ -33,7 +33,7 @@ jobs:
 #        run: src/test/java/com/browserstack/BrowserStackRemoteTest.java
 
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: https://github.com/dubewarsagar/BrowserStack/blob/abd96362e6b3b2de4143b3abb0f05b7ebd36472c/src/test/java/com/browserstack/BrowserStackRemoteTest.java  # See sample test script above
+        run: src/test/java/com/browserstack/BrowserStackRemoteTest.java  # See sample test script above
 
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
         uses: browserstack/github-actions/setup-local@master
