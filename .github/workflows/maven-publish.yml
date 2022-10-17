@@ -26,8 +26,8 @@ jobs:
       - name: 'Checkout the repository'
         uses: actions/checkout@v2
 
-      - name: 'Run test case'
-        run: npm install
+#      - name: 'Run test case'
+#        run: npm install
 
       - name: 'Running application under test'
         run: /src/test/java/com/browserstack/BStackDemoTest.java
